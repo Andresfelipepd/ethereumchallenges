@@ -32,9 +32,7 @@ export const Checkout: FC<ICheckoutProps> = (props) => {
   if (toAddress === '0x97843608a00e2bbc75ab0C1911387E002565DEDE') {
     extra = '(buidlguidl.eth)';
   }
-
   const [thanks, setThanks] = useState<ReactElement>();
-
   if (thanks) {
     return (
       <div>
@@ -169,8 +167,7 @@ export const Checkout: FC<ICheckoutProps> = (props) => {
                 if (finalResult) {
                   setAmount('');
                   setCart([]);
-                  setReason('');
-
+                  setReason('');<u></u>
                   setThanks(
                     <div>
                       <div style={{ fontSize: 32 }}>🎉 THANK YOU! 🎊</div>

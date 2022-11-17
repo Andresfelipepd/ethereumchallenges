@@ -1,5 +1,5 @@
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-import React, { FC, lazy, Suspense } from 'react';
+import { FC, lazy, Suspense } from 'react';
 import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
 import { ErrorBoundary, ErrorFallback } from '~~/app/common/ErrorFallback';
 import { BLOCKNATIVE_DAPPID } from '~~/models/constants/constants';
