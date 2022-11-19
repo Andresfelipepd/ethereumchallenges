@@ -8,8 +8,10 @@ import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 contract YourToken is ERC20 {
   // ToDo: add constructor and mint tokens for deployer,
   //       you can use the above import for ERC20.sol. Read the docs ^^^
-
-  constructor() public ERC20('Gold', 'GLD') {
+  constructor() ERC20('Peral', 'PRL') {
     // _mint() 1000 * 10 ** 18 to msg.sender
+    _mint(msg.sender,1000 * 10 ** 18);
   }
+
+
 }

@@ -13,12 +13,12 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironmentExtended) => {
 
   // Todo: deploy the vendor
 
-  // await deploy('Vendor', {
-  //   // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
-  //   from: deployer,
-  //   args: [yourToken.address],
-  //   log: true,
-  // });
+  await deploy('Vendor', {
+    // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
+    from: deployer,
+    args: [yourToken.address],
+    log: true,
+  });
 
   // const vendor = await ethers.getContract("Vendor", deployer);
 
