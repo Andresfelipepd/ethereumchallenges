@@ -10,7 +10,7 @@ contract YourToken is ERC20 {
   //       you can use the above import for ERC20.sol. Read the docs ^^^
   constructor() ERC20('Peral', 'PRL') {
     // _mint() 1000 * 10 ** 18 to msg.sender
-    _mint(msg.sender,1000 * 10 ** 18);
+    _mint(msg.sender,2000 * 10 ** 18);
   }
 
 

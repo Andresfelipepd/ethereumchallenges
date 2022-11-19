@@ -4,7 +4,7 @@ pragma solidity >=0.8.0 <0.9.0;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import './YourToken.sol';
 
-contract Vendor {
+contract Vendor is Ownable {
   YourToken public yourToken;
   uint256 public constant tokensPerEth = 100;
 
@@ -20,8 +20,9 @@ contract Vendor {
     yourToken.transfer(msg.sender, amountOfEth);
     emit BuyTokens(msg.sender, amountOfEth, msg.value);
   }
-
   // ToDo: create a withdraw() function that lets the owner withdraw ETH
-
+  function withdraw() payable public {
+    return;
+  }
   // ToDo: create a sellTokens() function:
 }

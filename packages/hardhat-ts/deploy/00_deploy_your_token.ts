@@ -1,7 +1,7 @@
-import { DeployFunction } from 'hardhat-deploy/types';
-import { parseEther } from 'ethers/lib/utils';
-import { HardhatRuntimeEnvironmentExtended } from 'helpers/types/hardhat-type-extensions';
 import { ethers } from 'hardhat';
+import { parseEther } from 'ethers/lib/utils';
+import { DeployFunction } from 'hardhat-deploy/types';
+import { HardhatRuntimeEnvironmentExtended } from 'helpers/types/hardhat-type-extensions';
 
 const func: DeployFunction = async (hre: HardhatRuntimeEnvironmentExtended) => {
   const { getNamedAccounts, deployments } = hre as any;
