@@ -13,5 +13,4 @@ contract YourToken is ERC20 {
     _mint(msg.sender,2000 * 10 ** 18);
   }
 
-
 }
