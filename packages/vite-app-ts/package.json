@@ -112,7 +112,7 @@
     "eslint-plugin-tailwind": "^0.2.1",
     "eslint-plugin-unused-imports": "^1.1.5",
     "less": "^4.1.2",
-    "postcss": "^8.3.5",
+    "postcss": "^8.4.31",
     "prettier": "^2.4.1",
     "rollup-plugin-polyfill-node": "^0.7.0",
     "shx": "^0.3.3",
